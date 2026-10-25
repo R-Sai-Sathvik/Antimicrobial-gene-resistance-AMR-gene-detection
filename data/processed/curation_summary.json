@@ -1,0 +1,9 @@
+{
+  "positive_count": 6054,
+  "screened_negative_count": 1772,
+  "final_curated_negative_count": 1616,
+  "positive_fasta": "data\\processed\\positive_sequences_curated.fasta",
+  "negative_fasta": "data\\processed\\negative_sequences_curated.fasta",
+  "excluded_exact_matches": 5,
+  "excluded_high_kmer_similarity": 10096
+}

@@ -1,0 +1,114 @@
+{
+  "catalog_summary": {
+    "amrfinder_total_entries": 11456,
+    "amrfinder_amr_entries": 10163,
+    "test_set_size": 1137,
+    "test_amr_genes_in_amrfinder": 837,
+    "coverage_percent": 88.85
+  },
+  "overall_metrics": {
+    "lightgbm": {
+      "accuracy": 0.9349164467897977,
+      "balanced_accuracy": 0.9078556263269639,
+      "precision": 0.9717391304347827,
+      "recall_sensitivity": 0.9490445859872612,
+      "specificity": 0.8666666666666667,
+      "f1_score": 0.9602577873254565,
+      "roc_auc": 0.9763296858838261,
+      "pr_auc": 0.9951366340132966,
+      "confusion_matrix": {
+        "TN": 169,
+        "FP": 26,
+        "FN": 48,
+        "TP": 894
+      }
+    },
+    "esm2": {
+      "accuracy": 0.9727352682497801,
+      "balanced_accuracy": 0.9672791115466275,
+      "precision": 0.9913700107874865,
+      "recall_sensitivity": 0.975583864118896,
+      "specificity": 0.958974358974359,
+      "f1_score": 0.9834135901551632,
+      "roc_auc": 0.9962218955849529,
+      "pr_auc": 0.9992284068342452,
+      "confusion_matrix": {
+        "TN": 187,
+        "FP": 8,
+        "FN": 23,
+        "TP": 919
+      }
+    }
+  },
+  "amrfinder_confirmed_sensitivity": {
+    "lightgbm": 0.966547192353644,
+    "esm2": 0.983273596176822
+  },
+  "per_class_amrfinder_detection": {
+    "AMINOGLYCOSIDE": {
+      "count": 37,
+      "lightgbm_sensitivity": 0.7297297297297297,
+      "esm2_sensitivity": 0.8918918918918919
+    },
+    "AMINOGLYCOSIDE/QUINOLONE": {
+      "count": 6,
+      "lightgbm_sensitivity": 1.0,
+      "esm2_sensitivity": 1.0
+    },
+    "BETA-LACTAM": {
+      "count": 678,
+      "lightgbm_sensitivity": 0.9985250737463127,
+      "esm2_sensitivity": 0.9985250737463127
+    },
+    "GLYCOPEPTIDE": {
+      "count": 5,
+      "lightgbm_sensitivity": 1.0,
+      "esm2_sensitivity": 1.0
+    },
+    "LINCOSAMIDE": {
+      "count": 6,
+      "lightgbm_sensitivity": 0.8333333333333334,
+      "esm2_sensitivity": 1.0
+    },
+    "LINCOSAMIDE/MACROLIDE/STREPTOGRAMIN": {
+      "count": 6,
+      "lightgbm_sensitivity": 1.0,
+      "esm2_sensitivity": 1.0
+    },
+    "LIPOPEPTIDE": {
+      "count": 5,
+      "lightgbm_sensitivity": 1.0,
+      "esm2_sensitivity": 1.0
+    },
+    "MACROLIDE/STREPTOGRAMIN": {
+      "count": 5,
+      "lightgbm_sensitivity": 1.0,
+      "esm2_sensitivity": 1.0
+    },
+    "NITROIMIDAZOLE": {
+      "count": 5,
+      "lightgbm_sensitivity": 1.0,
+      "esm2_sensitivity": 1.0
+    },
+    "PHENICOL": {
+      "count": 6,
+      "lightgbm_sensitivity": 0.8333333333333334,
+      "esm2_sensitivity": 0.6666666666666666
+    },
+    "QUINOLONE": {
+      "count": 19,
+      "lightgbm_sensitivity": 0.9473684210526315,
+      "esm2_sensitivity": 1.0
+    },
+    "SULFONAMIDE": {
+      "count": 11,
+      "lightgbm_sensitivity": 1.0,
+      "esm2_sensitivity": 1.0
+    },
+    "TRIMETHOPRIM": {
+      "count": 9,
+      "lightgbm_sensitivity": 0.7777777777777778,
+      "esm2_sensitivity": 1.0
+    }
+  }
+}

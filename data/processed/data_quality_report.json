@@ -1,0 +1,92 @@
+{
+  "card": {
+    "dataset_name": "CARD Positive Database",
+    "fasta_path": "data\\raw\\card\\protein_fasta_protein_homolog_model.fasta",
+    "total_records": 6059,
+    "valid_records": 6054,
+    "pass_rate_percent": 99.92,
+    "rejections": {
+      "short_sequences": 0,
+      "long_sequences": 0,
+      "invalid_characters": 5
+    },
+    "duplicates": {
+      "duplicate_header_ids": 0,
+      "duplicate_exact_sequences": 0,
+      "unique_sequences_count": 6059
+    },
+    "length_stats": {
+      "min_length": 53,
+      "max_length": 1452,
+      "mean_length": 320.24,
+      "median_length": 290
+    },
+    "amino_acid_composition": {
+      "M": 48671,
+      "K": 112050,
+      "A": 196844,
+      "Y": 65840,
+      "F": 71531,
+      "I": 102662,
+      "L": 200957,
+      "T": 115668,
+      "C": 13785,
+      "V": 124608,
+      "R": 91514,
+      "Q": 94165,
+      "S": 119065,
+      "E": 97311,
+      "N": 79650,
+      "D": 97388,
+      "G": 145187,
+      "W": 33661,
+      "H": 31575,
+      "P": 95707
+    }
+  },
+  "uniprot": {
+    "dataset_name": "UniProt Candidate Negatives",
+    "fasta_path": "data\\raw\\uniprot\\uniprot_bacterial_candidates.fasta",
+    "total_records": 11999,
+    "valid_records": 11873,
+    "pass_rate_percent": 98.95,
+    "rejections": {
+      "short_sequences": 71,
+      "long_sequences": 28,
+      "invalid_characters": 27
+    },
+    "duplicates": {
+      "duplicate_header_ids": 0,
+      "duplicate_exact_sequences": 1014,
+      "unique_sequences_count": 10985
+    },
+    "length_stats": {
+      "min_length": 14,
+      "max_length": 7481,
+      "mean_length": 426.94,
+      "median_length": 371
+    },
+    "amino_acid_composition": {
+      "M": 119240,
+      "S": 279022,
+      "L": 461327,
+      "E": 333910,
+      "Q": 187209,
+      "K": 257657,
+      "G": 399186,
+      "A": 481665,
+      "D": 295862,
+      "I": 284744,
+      "N": 195926,
+      "T": 275742,
+      "P": 230039,
+      "R": 278816,
+      "V": 366260,
+      "H": 114250,
+      "Y": 150458,
+      "F": 181910,
+      "W": 59237,
+      "C": 50600
+    }
+  }
+}

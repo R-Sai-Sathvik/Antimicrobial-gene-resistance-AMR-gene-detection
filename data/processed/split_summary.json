@@ -1,0 +1,26 @@
+{
+  "total_sequences": 7670,
+  "total_clusters": 2470,
+  "train": {
+    "num_clusters": 1754,
+    "num_sequences": 5841,
+    "positives": 4635,
+    "negatives": 1206,
+    "file": "data\\processed\\train_split.csv"
+  },
+  "validation": {
+    "num_clusters": 336,
+    "num_sequences": 692,
+    "positives": 477,
+    "negatives": 215,
+    "file": "data\\processed\\val_split.csv"
+  },
+  "test": {
+    "num_clusters": 380,
+    "num_sequences": 1137,
+    "positives": 942,
+    "negatives": 195,
+    "file": "data\\processed\\test_split.csv"
+  },
+  "leakage_check_passed": true
+}

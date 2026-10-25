@@ -1,0 +1,34 @@
+{
+  "pipeline_run_time": "2026-08-18 03:32:22",
+  "card": {
+    "source": "CARD (Comprehensive Antibiotic Resistance Database)",
+    "download_url": "https://card.mcmaster.ca/latest/data",
+    "archive_filename": "broadcard-data.tar.bz2",
+    "archive_size_bytes": 4366637,
+    "sha256": "94b89501fc26daafbe65e4151c17a8b007dc1272c4f8201737e44e44cdd4c065",
+    "timestamp_utc": "2026-08-18 03:31:18",
+    "fasta_file": "data\\raw\\card\\protein_fasta_protein_homolog_model.fasta",
+    "aro_file": "data\\raw\\card\\aro_index.tsv",
+    "num_sequences": 6059
+  },
+  "uniprot": {
+    "source": "UniProtKB / Swiss-Prot (Bacterial Reviewed)",
+    "download_url": "https://rest.uniprot.org/uniprotkb/stream",
+    "query": "(taxonomy_id:2) AND (reviewed:true) NOT (keyword:KW-0046) NOT (beta-lactamase) NOT (transporter) NOT (efflux) NOT (penicillin-binding) NOT (acetyltransferase)",
+    "sha256": "9891030f1ca21a32d8643e96b95fe2aee115fc367b0eb0d7ee1223981784db8f",
+    "timestamp_utc": "2026-08-18 03:32:18",
+    "fasta_file": "data\\raw\\uniprot\\uniprot_bacterial_candidates.fasta",
+    "num_sequences": 11999,
+    "elapsed_seconds": 58.4
+  },
+  "amrfinder": {
+    "source": "NCBI AMRFinderPlus Reference Gene Catalog",
+    "url": "https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/latest/ReferenceGeneCatalog.txt",
+    "sha256": "fa41ade01712841e639c91163243bace1c34755b927e69e0c8678540268a7fd4",
+    "timestamp_utc": "2026-08-18 03:32:22",
+    "file_path": "data\\external\\amrfinder\\ReferenceGeneCatalog.txt",
+    "num_entries": 11456,
+    "unique_gene_symbols": null,
+    "elapsed_seconds": 2.13
+  }
+}

@@ -1,0 +1,65 @@
+# AMR Gene Detection Configuration File
+
+project:
+  name: "amr-gene-detection"
+  seed: 42
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  external_dir: "data/external"
+  results_dir: "results"
+  models_dir: "models"
+
+data:
+  card:
+    download_url: "https://card.mcmaster.ca/latest/data"
+    archive_filename: "broadcard-data.tar.bz2"
+    fasta_filename: "protein_fasta_protein_homolog_model.fasta"
+    aro_index_filename: "aro_index.tsv"
+  uniprot:
+    query_url: "https://rest.uniprot.org/uniprotkb/stream"
+    batch_size: 500
+  amrfinder:
+    catalog_url: "https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/latest/ReferenceGeneCatalog.txt"
+
+preprocessing:
+  min_length: 50
+  max_length: 2500
+  valid_amino_acids: "ACDEFGHIKLMNPQRSTVWY"
+  clustering:
+    identity_threshold: 0.70
+    word_length: 5
+
+splitting:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_state: 42
+
+features:
+  kmers:
+    k_values: [3, 4]
+  esm:
+    model_name: "facebook/esm2_t12_35M_UR50D"
+    batch_size: 16
+    embedding_dim: 480
+
+models:
+  lightgbm:
+    n_estimators: 300
+    learning_rate: 0.05
+    max_depth: 7
+    random_state: 42
+  random_forest:
+    n_estimators: 200
+    random_state: 42
+  esm2_classifier:
+    dropout: 0.2
+    learning_rate: 0.0001
+    epochs: 10
+
+explainability:
+  integrated_gradients:
+    n_steps: 50
+  top_residue_percentile: 0.05

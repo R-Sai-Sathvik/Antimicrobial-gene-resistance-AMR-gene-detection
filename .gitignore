@@ -1,0 +1,45 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+
+# Temporary & scratch files
+*.log
+scratch/
+*.zip
+ext_seq.fasta
+
+# Academic course review documents & presentations (kept private)
+report/
+docs/
+*.docx
+*.pptx
+scripts/generate_docx_report.py
+scripts/generate_final_presentation.py
+scripts/convert_docx_to_pdf.ps1
+
+# Large raw download archives (curated splits are in data/processed/)
+data/raw/card/broadcard-data.tar.*
+data/raw/card/card.json
+data/raw/uniprot/uniprot_bacterial_candidates.fasta
